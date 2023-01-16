@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmVentas
+Partial Class frmHD
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,10 +22,9 @@ Partial Class frmVentas
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmVentas))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHD))
         Me.DataGrid1 = New System.Windows.Forms.DataGrid()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnAtras = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -37,7 +36,7 @@ Partial Class frmVentas
         Me.DataGrid1.HeaderForeColor = System.Drawing.SystemColors.ControlText
         Me.DataGrid1.Location = New System.Drawing.Point(29, 93)
         Me.DataGrid1.Name = "DataGrid1"
-        Me.DataGrid1.Size = New System.Drawing.Size(964, 411)
+        Me.DataGrid1.Size = New System.Drawing.Size(658, 411)
         Me.DataGrid1.TabIndex = 0
         '
         'Label1
@@ -50,16 +49,6 @@ Partial Class frmVentas
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "LISTADO HOJA DE REGISTRO - KARDEX"
         '
-        'btnAtras
-        '
-        Me.btnAtras.Font = New System.Drawing.Font("Britannic Bold", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAtras.Image = CType(resources.GetObject("btnAtras.Image"), System.Drawing.Image)
-        Me.btnAtras.Location = New System.Drawing.Point(473, 521)
-        Me.btnAtras.Name = "btnAtras"
-        Me.btnAtras.Size = New System.Drawing.Size(54, 49)
-        Me.btnAtras.TabIndex = 2
-        Me.btnAtras.UseVisualStyleBackColor = True
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
@@ -69,16 +58,15 @@ Partial Class frmVentas
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
-        'frmVentas
+        'frmHD
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1055, 582)
+        Me.ClientSize = New System.Drawing.Size(717, 538)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.btnAtras)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGrid1)
-        Me.Name = "frmVentas"
+        Me.Name = "frmHD"
         Me.Text = "HOJA REGISTRO - KARDEX"
         CType(Me.DataGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -89,6 +77,5 @@ Partial Class frmVentas
 
     Friend WithEvents DataGrid1 As DataGrid
     Friend WithEvents Label1 As Label
-    Friend WithEvents btnAtras As Button
     Friend WithEvents PictureBox1 As PictureBox
 End Class

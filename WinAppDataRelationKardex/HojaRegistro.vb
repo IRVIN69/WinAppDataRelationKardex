@@ -1,5 +1,5 @@
 ﻿Imports System.Data.SqlClient
-Public Class frmVentas
+Public Class frmHD
     Private Sub frmVentas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim oconeccion As New SqlConnection("server=.; integrated security=true; database=Kardex")
         Dim oDataAdapter As New SqlDataAdapter("", oconeccion)
@@ -12,9 +12,5 @@ Public Class frmVentas
         oDataSet.Relations.Add(oDataRelation)
         DataGrid1.DataSource = oDataSet.Tables(0)
         DataGrid1.Expand(0)
-    End Sub
-
-    Private Sub btnAtras_Click(sender As Object, e As EventArgs) Handles btnAtras.Click
-        frmPrincipal.Show()
     End Sub
 End Class
